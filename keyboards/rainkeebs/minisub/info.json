@@ -38,13 +38,11 @@
     },
     "rgblight": {
         "led_count": 20,
-        "max_brightness": 185
+        "max_brightness": 100
     },
     "caps_word": {
         "enabled": true,
-        "double_tap_shift_turns_on": true,
-        "idle_timeout": 1000,
-        "invert_on_shift": true
+        "double_tap_shift_turns_on": true
     },
     "tapping": {
         "ignore_mod_tap_interrupt": true,
