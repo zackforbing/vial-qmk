@@ -15,6 +15,10 @@
   "diode_direction": "ROW2COL",
   "processor": "atmega32u4",
   "bootloader": "atmel-dfu",
+  "caps_word": {
+    "enabled": true,
+    "double_tap_shift_turns_on": true
+  },
   "layouts": {
     "LAYOUT_33_big_space": {
       "layout": [
