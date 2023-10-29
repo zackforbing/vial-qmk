@@ -1,15 +1,12 @@
 {
-    "keyboard_name": "underscore33",
-    "manufacturer": "tominabox1",
+    "keyboard_name": "Lesovoz",
+    "manufacturer": "squashkb",
     "url": "",
-    "maintainer": "tominabox1",
+    "maintainer": "squashkb",
     "usb": {
-        "vid": "0x7431",
-        "pid": "0x3302",
-        "device_version": "0.0.2"
-    },
-    "ws2812": {
-        "pin": "D6"
+        "vid": "0x5351",
+        "pid": "0x4C53",
+        "device_version": "0.0.1"
     },
     "matrix_pins": {
         "cols": ["C5", "C6", "C7", "B7", "B6", "B5", "B4", "B3", "C2", "D0"],

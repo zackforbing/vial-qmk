@@ -116,4 +116,5 @@ user_song_list.h
 compile_commands.json
 .clangd/
 .cache/
-/.vscode
+.vscode
+.vscode/settings.json
