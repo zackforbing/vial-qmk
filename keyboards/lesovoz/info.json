@@ -15,6 +15,16 @@
     "diode_direction": "COL2ROW",
     "processor": "atmega328p",
     "bootloader": "usbasploader",
+    "features": {
+        "caps_word": true
+    },
+    "caps_word": {
+        "enabled": true,
+        "both_shifts_turns_on": false,
+        "double_tap_shift_turns_on": false,
+        "idle_timeout": 5000,
+        "invert_on_shift": true
+    },
     "layouts": {
         "LAYOUT_all": {
             "layout": [

@@ -2,7 +2,6 @@
     "name": "Lesovoz",
     "vendorId": "0x5351",
     "productId": "0x4C53",
-    "lighting": "none",
     "matrix": {
         "rows": 4,
         "cols": 10
