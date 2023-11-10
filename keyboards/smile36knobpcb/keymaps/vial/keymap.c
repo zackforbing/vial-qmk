@@ -1,10 +1,5 @@
 #include QMK_KEYBOARD_H
 
-enum combo_events {
-  COMBO_DEL,
-  COMBO_ESC
-};
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT(
 
@@ -41,10 +36,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     )
 };
 
-#ifdef COMBO_ENABLE
-const uint16_t PROGMEM combo_del[] = {KC_Y, KC_H, COMBO_END};
-const uint16_t PROGMEM combo_esc[] = {KC_Q, KC_A, COMBO_END};
-
 #if defined(ENCODER_MAP_ENABLE)
 const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
     [0] =   { ENCODER_CCW_CW(KC_VOLD, KC_VOLU) },
@@ -53,20 +44,3 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
     [3] =   { ENCODER_CCW_CW(RGB_RMOD, RGB_MOD) },
 };
 #endif
-
-combo_t key_combos[COMBO_COUNT] = {
-  [COMBO_DEL] = COMBO(combo_del,KC_DEL),
-  [COMBO_ESC] = COMBO(combo_esc,KC_ESC),
-};
-#endif
-
-bool encoder_update_user(uint8_t index, bool clockwise) {
-    if (index == 0) {
-        if (clockwise) {
-            tap_code(KC_VOLD);
-        } else {
-            tap_code(KC_VOLU);
-        }
-    }
-    return true;
-}
