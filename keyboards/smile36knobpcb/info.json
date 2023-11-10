@@ -23,7 +23,7 @@
     },
     "encoder": {
         "rotary": [
-            { "pin_a": "GP13", "pin_b": "GP14"}
+            { "pin_a": "GP13", "pin_b": "GP14", "resolution": 4 }
         ]
     },
     "diode_direction": "COL2ROW",
@@ -39,19 +39,8 @@
         "audio": false,
         "key_lock": false,
         "encoder": true
-    }, 
-    //"rgblight": {
-        //"pin": "GP25",
-        //"led_count": 6,
-        //"hue_steps": 8,
-        //"saturation_steps": 8,
-        //"brightness_steps": 8,
-        //"max_brightness": 61,
-        //"sleep": false,
-        //"animations": {
-            //"all": true
-        //}
-    //},
+    },
+
 "layouts": {
         "LAYOUT": {
             "layout": [
