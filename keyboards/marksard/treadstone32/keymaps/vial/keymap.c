@@ -28,8 +28,8 @@ enum custom_keycodes {
 #define KC_12AL  LALT_T(KC_F12)
 
 // Layer tap
-#define KC_BSLO  LT(_LOWER, KC_BSPC)
-#define KC_SPRA  LT(_RAISE, KC_SPC)
+#define KC_BSLO  LT(1, KC_BSPC)
+#define KC_SPRA  LT(2, KC_SPC)
 
 // Tap dance
 // #define KC_CODO  TD(TD_CODO)
@@ -59,7 +59,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|---------+---------+---------+---------+---------+---------+---------+---------+---------+---------|
        KC_F6SF,    KC_F7,    KC_F8,    KC_F9,   KC_F10,  XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_SCLN,  KC_QUSF,
   //|---------+---------+---------+---------+---------+---------+---------+---------+---------+---------|
-       KC_11CT,  KC_12AL,   KC_ESC,   KC_TAB,    KANJI,   KC_DEL,  XXXXXXX,  XXXXXXX,  JP_BSLS,   KC_GRV,
+       KC_11CT,  KC_12AL,   KC_ESC,   KC_TAB,    XXXXXXX,   KC_DEL,  XXXXXXX,  XXXXXXX,  KC_BSLS,   KC_GRV,
   //`---------+---------+---------+---------+---------+---------+---------+---------+---------+---------'
                                                _______,  MO(3)
   //                                        `---------|---------'
@@ -71,7 +71,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|---------+---------+---------+---------+---------+---------+---------+---------+---------+---------|
        KC_LSFT,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_LEFT,  KC_DOWN,    KC_UP,  KC_RGHT,  KC_LSFT,
   //|---------+---------+---------+---------+---------+---------+---------+---------+---------+---------|
-       KC_LCTL,  KC_LALT,  KC_LGUI,  XXXXXXX,  XXXXXXX,  KC_MINS,  JP_BSLS,  KC_COMM,   KC_DOT,  KC_SSCT,
+       KC_LCTL,  KC_LALT,  KC_LGUI,  XXXXXXX,  XXXXXXX,  KC_MINS,  KC_BSLS,  KC_COMM,   KC_DOT,  KC_SSCT,
   //`---------+---------+---------+---------+---------+---------+---------+---------+---------+---------'
                                                _______,  _______
   //                                        `---------|---------'
@@ -89,17 +89,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //                                        `---------|---------'
   )
 };
-
-uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
-  switch (keycode) {
-    case KC_BSLO:
-      return TAPPING_LAYER_TERM;
-    case KC_SPRA:
-      return TAPPING_LAYER_TERM;
-    default:
-      return TAPPING_TERM;
-  }
-}
 
 int RGB_current_mode;
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {

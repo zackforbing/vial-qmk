@@ -17,25 +17,7 @@
 #pragma once
 
 #define VIAL_KEYBOARD_UID {0x1E, 0xDE, 0xF1, 0xC7, 0x41, 0x76, 0xE9, 0xB4}
+#define VIAL_UNLOCK_COMBO_ROWS { 4, 0 }
+#define VIAL_UNLOCK_COMBO_COLS { 4, 0 }
 
 // place overrides here
-#define TAPPING_TERM 200
-
-#define TAPPING_LAYER_TERM 150 // Custom LT Tapping term
-#define TAPPING_TERM_PER_KEY
-
-#ifdef MOUSEKEY_ENABLE
-  #undef MOUSEKEY_INTERVAL
-  #define MOUSEKEY_INTERVAL 1
-  #undef MOUSEKEY_TIME_TO_MAX
-  #define MOUSEKEY_TIME_TO_MAX 150
-
-  #undef MOUSEKEY_MAX_SPEED
-  #define MOUSEKEY_MAX_SPEED 3
-
-  #undef MOUSEKEY_MOVE_DELTA
-  #define MOUSEKEY_MOVE_DELTA 4
-
-  #undef MOUSEKEY_DELAY
-  #define MOUSEKEY_DELAY 0
-#endif
