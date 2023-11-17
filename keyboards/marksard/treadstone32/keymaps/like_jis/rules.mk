@@ -4,7 +4,7 @@
 #
 
 # If your custom treadstone32 pcb, you can rewrite to yes.
-RGBLIGHT_ENABLE = yes  # LED underglow (Enable WS2812 RGB underlight.)
+RGBLIGHT_ENABLE = no  # LED underglow (Enable WS2812 RGB underlight.)
 # Other selectable option
 IOS_DEVICE_ENABLE = no      # connect to IOS device (iPad,iPhone)
 
