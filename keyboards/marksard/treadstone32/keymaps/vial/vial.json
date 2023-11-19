@@ -1,8 +1,8 @@
 {
     "lighting": "none",
     "matrix": {
-        "rows": 8,
-        "cols": 5
+        "rows": 5,
+        "cols": 8
     },
     "layouts": {
         "keymap": [
