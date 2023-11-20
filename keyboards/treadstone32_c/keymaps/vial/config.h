@@ -20,4 +20,6 @@
 #define VIAL_UNLOCK_COMBO_ROWS { 4, 0 }
 #define VIAL_UNLOCK_COMBO_COLS { 4, 0 }
 
+#define VIAL_COMBO_ENTRIES 32
+
 // place overrides here
