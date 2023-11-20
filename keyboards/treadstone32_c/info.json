@@ -10,6 +10,21 @@
     },
     "width": 10.5,
     "height": 4,
+    "features": {
+        "console": true,
+        "extrakey": true,
+        "nkro": true
+    },
+    "bootmagic": {
+        "enabled": true,
+        "matrix": [0, 0]
+    },
+    "caps_word": {
+        "enabled": true,
+        "both_shifts_turns_on": true,
+        "idle_timeout": 5000,
+        "invert_on_shift": true
+    },
     "layouts": {
         "LAYOUT": {
             "layout": [
