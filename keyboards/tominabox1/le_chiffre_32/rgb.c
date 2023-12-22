@@ -49,13 +49,13 @@ led_config_t g_led_config = {
 
 const uint8_t PROGMEM layer_colors[][3] = {
     {RGB_OFF},
+    {RGB_PURPLE},
+    {RGB_TEAL},
+    {RGB_YELLOW},
+    {RGB_PINK},
     {RGB_RED},
     {RGB_GREEN},
-    {RGB_BLUE},
-    {RGB_YELLOW},
-    {RGB_PURPLE},
-    {RGB_PINK},
-    {RGB_TEAL}
+    {RGB_BLUE}
 };
 
 void set_rgb_matrix_indicators(uint8_t led_min, uint8_t led_max) {
