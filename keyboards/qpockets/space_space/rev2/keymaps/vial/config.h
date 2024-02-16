@@ -18,5 +18,14 @@
 
 #define VIAL_KEYBOARD_UID {0x00, 0x41, 0xFF, 0xD2, 0xB3, 0xE6, 0xAA, 0x9B}
 
-#define VIAL_UNLOCK_COMBO_ROWS { 2, 0 }
-#define VIAL_UNLOCK_COMBO_COLS { 2, 10 }
+#define VIAL_UNLOCK_COMBO_ROWS { 0, 0 }
+#define VIAL_UNLOCK_COMBO_COLS { 0, 10 }
+
+#define VIAL_COMBO_ENTRIES 32
+
+// qmk settings
+#define TAPPING_TERM 250
+#define PERMISSIVE_HOLD
+// caps word
+#define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
+#define CAPS_WORD_INVERT_ON_SHIFT
