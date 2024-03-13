@@ -24,12 +24,6 @@ enum custom_keycodes {
 // Lower layer mod tap
 #define KC_F6SF  LSFT_T(KC_F6)
 #define KC_QUSF  RSFT_T(KC_QUOT)
-#define KC_11CT  LCTL_T(KC_F11)
-#define KC_12AL  LALT_T(KC_F12)
-
-// Layer tap
-#define KC_BSLO  LT(1, KC_BSPC)
-#define KC_SPRA  LT(2, KC_SPC)
 
 // Tap dance
 // #define KC_CODO  TD(TD_CODO)
@@ -49,7 +43,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|---------+---------+---------+---------+---------+---------+---------+---------+---------+---------|
        KC_Z_CT,  KC_X_AL,  KC_C_GU,     KC_V,     KC_B,     KC_N,     KC_M,  KC_COMM,   KC_DOT,  KC_SSCT,
   //`---------+---------+---------+---------+---------+---------+---------+---------+---------+---------'
-                                               KC_BSLO,  KC_SPRA
+                                               KC_SPC,  KC_BSPC
   //                                        `---------|---------'
   ),
 
@@ -59,7 +53,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|---------+---------+---------+---------+---------+---------+---------+---------+---------+---------|
        KC_F6SF,    KC_F7,    KC_F8,    KC_F9,   KC_F10,  XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_SCLN,  KC_QUSF,
   //|---------+---------+---------+---------+---------+---------+---------+---------+---------+---------|
-       KC_11CT,  KC_12AL,   KC_ESC,   KC_TAB,    XXXXXXX,   KC_DEL,  XXXXXXX,  XXXXXXX,  KC_BSLS,   KC_GRV,
+       KC_F11,  KC_F12,   KC_ESC,   KC_TAB,    XXXXXXX,   KC_DEL,  XXXXXXX,  XXXXXXX,  KC_BSLS,   KC_GRV,
   //`---------+---------+---------+---------+---------+---------+---------+---------+---------+---------'
                                                _______,  MO(3)
   //                                        `---------|---------'
