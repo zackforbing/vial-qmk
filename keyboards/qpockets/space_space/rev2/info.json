@@ -13,6 +13,9 @@
     "rows": ["B1", "B0", "D5", "B6"]
   },
   "diode_direction": "COL2ROW",
+  "features": {
+    "encoder": true
+  },
   "encoder": {
     "rotary": [
       {"pin_a": "B4", "pin_b": "D7", "resolution": 3},
