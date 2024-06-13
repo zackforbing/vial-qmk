@@ -13,8 +13,8 @@
         "rows": ["D0", "B6", "D7", "B5"]
     },
     "diode_direction": "COL2ROW",
-    "processor": "atmega328p",
-    "bootloader": "usbasploader",
+    "processor": "atmega32u4",
+    "bootloader": "atmel-dfu",
     "features": {
         "caps_word": true
     },
