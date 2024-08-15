@@ -53,7 +53,7 @@ extern const pointing_device_driver_t pointing_device_driver;
 #ifndef COCOT_ROTATION_ANGLE
 #    define COCOT_ROTATION_ANGLE { -75, -60, -45, -30, -15, 0, 15, 30, 45, 60, 75 }
 #    ifndef COCOT_ROTATION_DEFAULT
-#       define COCOT_ROTATION_DEFAULT 3
+#       define COCOT_ROTATION_DEFAULT 5
 #    endif
 #endif
 #ifndef COCOT_ROTATION_DEFAULT
