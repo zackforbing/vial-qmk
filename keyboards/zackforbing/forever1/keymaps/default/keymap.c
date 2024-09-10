@@ -20,7 +20,7 @@ combo_t key_combos[] = {
 
 layer_state_t layer_state_set_user(layer_state_t state) {
     return update_tri_layer_state(state, 1, 2, 3);
-} 
+}
 
 enum layer_names {
   _BASE,
@@ -30,12 +30,12 @@ enum layer_names {
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-    
+
     [_BASE] = LAYOUT(
         KC_Q,         KC_W, KC_E,    KC_R,    KC_T,                                           KC_Y,          KC_U,          KC_I,     KC_O,   KC_P,
         KC_A,         KC_S, KC_D,    KC_F,    KC_G,                                           KC_H,          KC_J,          KC_K,     KC_L,   KC_SCLN,
         LSFT_T(KC_Z), KC_X, KC_C,    KC_V,    KC_B,                                           KC_N,          KC_M,          KC_COMMA, KC_DOT, RSFT_T(KC_SLSH),
-                            KC_LCTL, KC_LGUI, LT(1,KC_BSPC),   KC_MS_BTN2,    KC_MS_BTN1,     LT(2,KC_SPC),   (KC_ENT),      KC_LALT
+                            KC_LCTL, KC_LGUI, LT(1,KC_SPC),   KC_MS_BTN2,    KC_MS_BTN1,     LT(2,KC_BSPC),   (KC_ENT),      KC_LALT
     ),
     [_FN1] = LAYOUT(
         KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                            KC_6,     KC_7,    KC_8,    KC_9,    KC_0,
@@ -75,7 +75,7 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
     [0] =  { ENCODER_CCW_CW(KC_MS_WH_UP, KC_MS_WH_DOWN)  },
     [1] =  { ENCODER_CCW_CW(KC_MS_WH_LEFT, KC_MS_WH_RIGHT)  },
     [2] =  { ENCODER_CCW_CW(KC_PGUP, KC_PGDN)  },
-    [3] =  { ENCODER_CCW_CW(KC_VOLD, KC_VOLU)  } 
+    [3] =  { ENCODER_CCW_CW(KC_VOLD, KC_VOLU)  }
     //[4] =  { ENCODER_CCW_CW(XXXXXXX, XXXXXXX) }
 };
 #endif
