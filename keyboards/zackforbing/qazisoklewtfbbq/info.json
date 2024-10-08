@@ -42,7 +42,8 @@
         "console": false,
         "extrakey": true,
         "mousekey": true,
-        "nkro": true
+        "nkro": true,
+        "encoder": true
     },
     "bootmagic": {
         "enabled": true,
